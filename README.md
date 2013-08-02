@@ -1,4 +1,4 @@
-# A Play Framework "Simple Templates" Example
+## A Play Framework "Simple Templates" Example
 
 This project includes an example of using templates with the
 Play Framework. 
