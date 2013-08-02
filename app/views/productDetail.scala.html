@@ -1,0 +1,23 @@
+@(product: (String, String), items: List[String])
+
+@*---------------------------------------------------
+   Our "product detail" page.
+   Content here is wrapped by the 'main' template,
+   i.e., /views/main.scala/html 
+ --------------------------------------------------*@
+
+@main(product._1) {
+
+  <!-- include the shopping cart widget --> 
+  @cartWidget(items)
+
+  <!-- a description of the current product (would help to have a 'buy' button) -->
+  <div style="padding:10px; margin:10px;">    
+		<h1>@product._1</h1>
+	  <div id="product_info">
+  	  <p>@product._2</p>
+	  </div>	
+  </div>
+
+}
+

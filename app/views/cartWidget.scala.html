@@ -1,0 +1,10 @@
+@(items: List[String])
+
+<div style="background-color:#eee; padding:10px; margin:10px; float:left">
+	<h2>Your Shopping Cart</h2>
+	<ul>
+		@items.map { item =>
+		  <li>@item</li>
+		}
+	</ul>
+</div>

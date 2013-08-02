@@ -1,0 +1,15 @@
+@(items: List[String])
+
+@title = @{"Your Shopping Cart"} 
+
+@cart(title) {
+    
+	<h1>@title</h1>
+	
+	<ul>
+		@items.map { item =>
+		  <li>@item</li>
+		}
+	</ul>
+
+}
